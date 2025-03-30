@@ -3,17 +3,16 @@ package Assignment1;
 import java.util.Scanner;
 
 /**
- * This method checks if a given string consists only of numeric digits.
+ * This method prints an array in reverse order using recursion.
  * 
- * The method iterates through each character of the string and verifies if all characters are digits.
+ * The function starts from the last index of the array and recursively prints each element 
+ * until it reaches the beginning of the array.
  * 
- * Edge Cases Handled:
- * - An empty string returns false.
- * - A string with non-numeric characters returns false.
- * - A purely numeric string returns true.
+ * Base Case:
+ * - If the index becomes negative, the recursion stops.
  * 
- * Time Complexity: O(n), where n is the length of the input string.
- * Space Complexity: O(1), as only a few extra variables are used.
+ * Time Complexity: O(n), since each element is visited once.
+ * Space Complexity: O(n), due to recursive function calls stored in the call stack.
     */
 public class Problem7 {
     public static void printReverse(int index, int n, int[] elements) {
