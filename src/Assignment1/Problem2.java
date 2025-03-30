@@ -1,7 +1,23 @@
 package Assignment1;
 
 import java.util.Scanner;
-
+/**
+ * Recursively calculates the average of an array.
+ * 
+ * The average of an array {a1, a2, ..., an} is computed as:
+ * 
+ * Average(n) = (arr[n-1] + (n-1) * Average(n-1)) / n
+ * 
+ * Base Case:
+ * - If n == 1, return the only element in the array.
+ * 
+ * Recursive Case:
+ * - Compute the average by including the last element and 
+ *   averaging it with the result of a smaller sub-array.
+ * 
+ * Time Complexity: O(n) (since we make n recursive calls).
+ * Space Complexity: O(n) (due to recursive function calls in the call stack).
+    */
 public class Problem2 {
     public static double findAverage(int[] arr, int n) {
         if (n == 1) {
