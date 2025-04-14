@@ -15,7 +15,7 @@ public interface MyList<T> extends Iterable<T> {
     }
     T remove(int index);
     void removeLast();
-    void sort(); // сортировка по умолчанию, если T — Comparable
+    void sort(); 
     int indexOf(Object object);
     int lastIndexOf(Object object);
     boolean exists(Object object);
