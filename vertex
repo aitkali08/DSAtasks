@@ -1,0 +1,18 @@
+class Vertex {
+    String label;
+    List<Pair<Vertex, Double>> neighbors;
+
+    Vertex(String label) {
+        this.label = label;
+        this.neighbors = new ArrayList<>();
+    }
+
+    void addNeighbor(Vertex neighbor, double weight) {
+        neighbors.add(new Pair<>(neighbor, weight));
+    }
+
+    @Override
+    public String toString() {
+        return label;
+    }
+}
